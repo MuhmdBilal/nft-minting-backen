@@ -12,6 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use("/api/auth", userRoute)
+app.use("/", (req, res)=>{
+  res.send("Hello from server")
+})
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
