@@ -5,6 +5,7 @@ const nftMintingSchema = new mongoose.Schema({
     nftId: {type: String},
     quantity: {type: String},
     fileUrl: {type: String},
+    fileType: {type: String},
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
     },
     {timestamps: true
